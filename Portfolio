@@ -29,7 +29,7 @@ padding: 30px; }
 <p>รายละเอียดชนงาน ิ้ : เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
 </div>
 <!-- ปุ่มกดกลับหน้าแรก -->
-<a href="index.html" class="btn"> กลับหน้าแรก</a>
+<a href="Portfolio.html" class="btn"> กลับหน้าแรก</a>
 </div>
 </body>
 </html>
