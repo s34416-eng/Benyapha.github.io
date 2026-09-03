@@ -2525,3 +2525,392 @@ img {
         line-height: 1.9;
     }
 }
+/* =========================================================
+   PORTFOLIO BACKGROUND
+   ใช้กับทุกหัวข้อ 01 - 05
+   สีหลัก : #c2597c
+========================================================= */
+/* =========================================================
+   พื้นฐานทุกหน้า
+========================================================= */
+.page {
+    position: relative;
+    overflow: hidden;
+    background-color: #c2597c;
+    /* GRID */
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.055) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.055) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255,255,255,0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(255,255,255,0.10),
+            transparent 30%
+        );
+    background-size:
+        55px 55px,
+        55px 55px,
+        auto,
+        auto;
+}
+/* =========================================================
+   ลายวงกลมขนาดใหญ่ทุกหน้า
+========================================================= */
+.page::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 50%;
+    right: -230px;
+    top: -220px;
+    box-shadow:
+        0 0 0 35px rgba(255,255,255,0.025),
+        0 0 0 75px rgba(255,255,255,0.018),
+        0 0 0 120px rgba(255,255,255,0.012);
+    pointer-events: none;
+    z-index: 0;
+}
+/* =========================================================
+   วงกลมด้านล่างซ้าย
+========================================================= */
+.page::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 2px dotted rgba(255,255,255,0.22);
+    border-radius: 50%;
+    left: -110px;
+    bottom: -90px;
+    box-shadow:
+        0 0 0 20px rgba(255,255,255,0.025),
+        0 0 0 45px rgba(255,255,255,0.018);
+    pointer-events: none;
+    z-index: 0;
+}
+/* =========================================================
+   ให้เนื้อหาอยู่เหนือพื้นหลัง
+========================================================= */
+.page > * {
+    position: relative;
+    z-index: 2;
+}
+/* =========================================================
+   01 หน้าปก
+========================================================= */
+#home {
+    background-color: #c2597c;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.045) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.045) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(255,255,255,0.18),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 20% 85%,
+            rgba(255,255,255,0.13),
+            transparent 30%
+        );
+}
+/* เส้นเฉียงตกแต่ง */
+#home .home-container::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgba(255,255,255,0.10);
+    transform: rotate(35deg);
+    right: -380px;
+    top: 15%;
+    pointer-events: none;
+    z-index: -1;
+}
+/* จุดตกแต่ง */
+#home .home-container::after {
+    content:
+        "•  •  •  •  •"
+        "\A"
+        "•  •  •  •  •"
+        "\A"
+        "•  •  •  •  •"
+        "\A"
+        "•  •  •  •  •";
+    white-space: pre;
+    position: absolute;
+    left: 35px;
+    bottom: 100px;
+    color: rgba(255,255,255,0.28);
+    font-size: 14px;
+    line-height: 2.2;
+    letter-spacing: 8px;
+    transform: rotate(-12deg);
+    pointer-events: none;
+    z-index: -1;
+}
+/* =========================================================
+   02 คำนำ
+========================================================= */
+#preface {
+    background-color: #c2597c;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(255,255,255,0.17),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(255,255,255,0.12),
+            transparent 30%
+        );
+}
+/* เส้นเรขาคณิตด้านซ้าย */
+#preface .preface-layout::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(255,255,255,0.12);
+    transform: rotate(45deg);
+    left: -300px;
+    top: 10%;
+    pointer-events: none;
+}
+/* =========================================================
+   03 ประวัติส่วนตัว
+========================================================= */
+#profile {
+    background-color: #c2597c;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(255,255,255,0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(255,255,255,0.12),
+            transparent 28%
+        );
+}
+/* เส้นกรอบเรขาคณิต */
+#profile .profile-layout::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 2px solid rgba(255,255,255,0.10);
+    transform: rotate(45deg);
+    right: -250px;
+    top: 15%;
+    pointer-events: none;
+}
+/* จุดตกแต่ง */
+#profile .profile-layout::after {
+    content: "＋  ×  ○  ＋  ×";
+    position: absolute;
+    left: -20px;
+    bottom: 30px;
+    color: rgba(255,255,255,0.28);
+    font-size: 24px;
+    letter-spacing: 15px;
+    transform: rotate(-10deg);
+    pointer-events: none;
+}
+/* =========================================================
+   04 ผลงานและกิจกรรม
+========================================================= */
+#activities {
+    background-color: #c2597c;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.05) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,255,255,0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(255,255,255,0.12),
+            transparent 30%
+        );
+}
+/* เส้นเฉียง */
+#activities::before {
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    top: 25%;
+    border-radius: 0;
+    transform: rotate(45deg);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: none;
+}
+/* จุดตกแต่งด้านข้าง */
+#activities::after {
+    width: 170px;
+    height: 170px;
+    left: -70px;
+    bottom: 15%;
+    border: 2px dotted rgba(255,255,255,0.25);
+    box-shadow:
+        0 0 0 25px rgba(255,255,255,0.025),
+        0 0 0 50px rgba(255,255,255,0.015);
+}
+/* =========================================================
+   05 ช่องทางการติดต่อ
+========================================================= */
+#contact {
+    background-color: #c2597c;
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.055) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.055) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(255,255,255,0.18),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(255,255,255,0.13),
+            transparent 30%
+        );
+}
+/* วงกลมซ้อนด้านขวา */
+#contact::before {
+    width: 500px;
+    height: 500px;
+    right: -230px;
+    top: -180px;
+    border: 2px solid rgba(255,255,255,0.16);
+    box-shadow:
+        0 0 0 30px rgba(255,255,255,0.025),
+        0 0 0 65px rgba(255,255,255,0.018),
+        0 0 0 100px rgba(255,255,255,0.012);
+}
+/* เส้นตกแต่ง */
+#contact .contact-layout::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background: rgba(255,255,255,0.20);
+    left: -150px;
+    top: 20%;
+    transform: rotate(-35deg);
+    pointer-events: none;
+}
+/* =========================================================
+   เส้นตกแต่งเล็ก ๆ ทุกหน้า
+========================================================= */
+.page-title::before {
+    content: "＋   ×   ○";
+    position: absolute;
+    color: rgba(255,255,255,0.20);
+    font-size: 16px;
+    letter-spacing: 10px;
+    right: 8%;
+    top: 35px;
+    pointer-events: none;
+}
+/* =========================================================
+   Animation เบา ๆ
+========================================================= */
+.page::before {
+    animation: portfolioFloat 14s ease-in-out infinite alternate;
+}
+@keyframes portfolioFloat {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-18px, 15px);
+    }
+}
+/* =========================================================
+   MOBILE / IPAD
+========================================================= */
+@media (max-width: 768px) {
+    .page {
+        background-size:
+            35px 35px,
+            35px 35px,
+            auto,
+            auto;
+    }
+    .page::before {
+        width: 350px;
+        height: 350px;
+        right: -180px;
+        top: -120px;
+    }
+    .page::after {
+        width: 150px;
+        height: 150px;
+        left: -80px;
+        bottom: -60px;
+    }
+    #home .home-container::after {
+        left: 15px;
+        bottom: 80px;
+        font-size: 10px;
+    }
+    .page-title::before {
+        display: none;
+    }
+}
