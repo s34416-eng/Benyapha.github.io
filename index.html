@@ -1,35 +1,2247 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะนำตัวของฉัน</title>
-<style>
-  
-.btn { display: inline-block; background: #2c3e50; color: white; padding: 10px
-20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-  
-body {
-background-color: #FFB6C1; color: #333;
-text-align: center; padding: 50px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-}
-.card {
-background: white; border-radius: 50px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
+    <title>Portfolio | เบญญาภา เกลาเกลี้ยง</title>
 
-}
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
-<p>สวัสดีค่ะ! ฉันชื่อ <strong>เบญญาภา เกลาเกลี้ยง (Benyapha Klaokliang)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน Nursing Science</p>
-<p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
-</div>
-  <a href="portfolio.html" class="btn"> next</a>
+
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-line"></div>
+
+            <div>
+                <span>MY</span>
+                <strong>PORTFOLIO</strong>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <button class="menu-item active" onclick="openPage('home', this)">
+
+                <span class="number">01</span>
+
+                <span>
+                    คำนำ
+                </span>
+
+            </button>
+
+
+            <button class="menu-item" onclick="openPage('profile', this)">
+
+                <span class="number">02</span>
+
+                <span>
+                    ประวัติส่วนตัว
+                </span>
+
+            </button>
+
+
+            <button class="menu-item" onclick="openPage('activities', this)">
+
+                <span class="number">03</span>
+
+                <span>
+                    ผลงานและกิจกรรม
+                </span>
+
+            </button>
+
+
+            <button class="menu-item" onclick="openPage('contact', this)">
+
+                <span class="number">04</span>
+
+                <span>
+                    ช่องทางการติดต่อ
+                </span>
+
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <span>BENYAPA</span>
+
+            <small>PORTFOLIO 2026</small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ======================================
+         MAIN CONTENT
+    ======================================= -->
+
+    <main class="main">
+
+
+        <!-- ======================================
+             HOME
+        ======================================= -->
+
+        <section id="home" class="page active">
+
+            <div class="home-container">
+
+
+                <div class="home-top">
+
+                    <span class="mini-title">
+                        PERSONAL PORTFOLIO
+                    </span>
+
+                    <div class="decor-line"></div>
+
+                </div>
+
+
+                <h1 class="portfolio-title">
+                    PORT<br>
+                    <span>FOLIO</span>
+                </h1>
+
+
+                <!-- รูปภาพหลัก -->
+
+                <div class="main-photo">
+
+                    <img src="images/profile.jpg"
+                        alt="Benyapa">
+
+                    <div class="photo-number">
+                        01
+                    </div>
+
+                </div>
+
+
+                <div class="home-info">
+
+                    <h2>
+                        น.ส.เบญญาภา เกลาเกลี้ยง
+                    </h2>
+
+                    <p class="school">
+                        โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
+                    </p>
+
+                    <p class="university">
+                        คณะพยาบาลศาสตร์ สาขาพยาบาลศาสตร์
+                        <br>
+                        จุฬาลงกรณ์มหาวิทยาลัย
+                    </p>
+
+                </div>
+
+
+                <div class="scroll-text">
+                    SCROLL TO EXPLORE
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             PREFACE
+        ======================================= -->
+
+        <section id="preface" class="page">
+
+
+            <div class="page-title">
+
+                <span>01</span>
+
+                <h1>คำนำ</h1>
+
+                <p>
+                    PREFACE
+                </p>
+
+            </div>
+
+
+            <div class="preface-layout">
+
+                <div class="vertical-text">
+                    PORTFOLIO
+                </div>
+
+
+                <div class="text-card">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+
+                    <p>
+                        &nbsp;&nbsp;แฟ้มสะสมผลงาน (Portfolio) เล่มนี้
+                        จัดทำขึ้นเพื่อเป็นตัวแทนในการนำเสนอข้อมูลเกี่ยวกับ
+                        ประวัติส่วนตัว ความรู้ ความสามารถ ทักษะ และกิจกรรมต่างๆ
+                        ของข้าพเจ้า โดยเฉพาะความสนใจและความมุ่งมั่นที่มีต่อการศึกษาต่อ
+                    </p>
+
+
+                    <p>
+                        &nbsp;&nbsp;ภายในแฟ้มสะสมผลงานเล่มนี้ ประกอบด้วย
+                        ประวัติส่วนตัว ผลการเรียน กิจกรรมที่ข้าพเจ้าได้เข้าร่วม
+                    </p>
+
+
+                    <div class="signature">
+                        BENYAPA
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             PROFILE
+        ======================================= -->
+
+        <section id="profile" class="page">
+
+
+            <div class="page-title">
+
+                <span>02</span>
+
+                <h1>ประวัติส่วนตัว</h1>
+
+                <p>
+                    ABOUT ME
+                </p>
+
+            </div>
+
+
+            <div class="profile-layout">
+
+
+                <!-- PERSONAL -->
+
+                <div class="info-card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h2>
+                        ประวัติส่วนตัว
+                    </h2>
+
+
+                    <div class="info-row">
+
+                        <span>ชื่อ</span>
+
+                        <strong>
+                            น.ส.เบญญาภา เกลาเกลี้ยง
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>ชื่อเล่น</span>
+
+                        <strong>
+                            โบนัส
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>อายุ</span>
+
+                        <strong>
+                            17 ปี
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>วันเกิด</span>
+
+                        <strong>
+                            26 ธันวาคม 2551
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>สัญชาติ</span>
+
+                        <strong>
+                            ไทย
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>เชื้อชาติ</span>
+
+                        <strong>
+                            ไทย
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>ศาสนา</span>
+
+                        <strong>
+                            พุทธ
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EDUCATION -->
+
+                <div class="info-card education">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h2>
+                        ประวัติการศึกษา
+                    </h2>
+
+
+                    <div class="education-main">
+
+                        <span>
+                            SCHOOL
+                        </span>
+
+                        <h3>
+                            โรงเรียนบ้านบึง
+                            <br>
+                            "อุตสาหกรรมนุเคราะห์"
+                        </h3>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>แผนการเรียน</span>
+
+                        <strong>
+                            วิทยาศาสตร์-คณิตศาสตร์ (MSEP)
+                        </strong>
+
+                    </div>
+
+
+                    <div class="gpax">
+
+                        <span>
+                            GPAX
+                        </span>
+
+                        <strong>
+                            3.83
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             ACTIVITIES
+        ======================================= -->
+
+        <section id="activities" class="page">
+
+
+            <div class="page-title">
+
+                <span>03</span>
+
+                <h1>ผลงานและกิจกรรม</h1>
+
+                <p>
+                    ACTIVITIES & ACHIEVEMENTS
+                </p>
+
+            </div>
+
+
+
+            <!-- ACTIVITY 01 -->
+
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img src="images/activity1.jpg"
+                        alt="Chula X MOOC">
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        CERTIFICATE
+                    </span>
+
+                    <h2>
+                        เปิดโลกเคมี:
+                        สารประกอบอินทรีย์และพอลิเมอร์
+                        Chula X MOOC
+                    </h2>
+
+                    <div class="activity-date">
+                        30 มีนาคม 2569
+                    </div>
+
+                    <p>
+                        ได้รับเกียรติบัตรจากการเรียนล่วงหน้า
+                        เปิดโลกเคมี: สารประกอบอินทรีย์และพอลิเมอร์
+                        Chula X MOOC
+                    </p>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้รับความรู้เรื่องสารประกอบอินทรีย์
+                            และพอลิเมอร์
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ACTIVITY 02 -->
+
+            <article class="activity reverse">
+
+                <div class="activity-image">
+
+                    <img src="images/activity2.jpg"
+                        alt="กิจกรรมจิตอาสาป้องกันเอดส์">
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        VOLUNTEER
+                    </span>
+
+                    <h2>
+                        กิจกรรมอบรมแกนนำจิตอาสา
+                        ป้องกันเอดส์
+                    </h2>
+
+                    <p>
+                        ได้รับเกียรติบัตรจากการเป็นคณะกรรมการ
+                        จัดกิจกรรมอบรมแกนนำจิตอาสาป้องกันเอดส์
+                        เทิดพระเกียรติพระเจ้าวรวงศ์เธอ
+                        พระองค์เจ้าโสมสวลี กรมหมื่นสุทธนารีนาถ
+                    </p>
+
+                    <p>
+                        ณ โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
+                    </p>
+
+                    <div class="activity-date">
+                        13 - 15 กรกฎาคม 2569
+                    </div>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้ทำจิตอาสาและรับความรู้เรื่องเอดส์
+                            ทั้งในการป้องกันและวิธีรักษาตนเอง
+                            ให้ห่างไกลจากโรคเอดส์
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ACTIVITY 03 -->
+
+            <article class="gallery-activity">
+
+                <div class="gallery-images">
+
+                    <div>
+                        <img src="images/activity3.jpg"
+                            alt="กิจกรรมป่าชายเลน">
+                    </div>
+
+                    <div>
+                        <img src="images/activity4.jpg"
+                            alt="กิจกรรมป่าชายเลน">
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-text">
+
+                    <span class="activity-label">
+                        VOLUNTEER PROJECT
+                    </span>
+
+                    <h2>
+                        โครงการ "หัวใจจิตอาสาฟื้นฟูป่าชายเลน"
+                    </h2>
+
+                    <p>
+                        มูลนิธิวิถีธรรมชลบุรีร่วมกับกลุ่มจิตอาสา
+                        DRAGON EYE GROUP
+                    </p>
+
+                    <p>
+                        ณ สวนป่าชายเลน สอ.รฝ.
+                        กองทัพเรือ สัตหีบ
+                    </p>
+
+                    <div class="activity-date">
+                        8 พฤษภาคม 2569
+                    </div>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้รับความรู้และได้ร่วมทำจิตอาสา
+                            ในการปลูกป่าชายเลนเพื่อป้องกัน
+                            การกัดเซาะชายฝั่งและเป็นแหล่ง
+                            ที่อยู่อาศัยของสัตว์น้ำขนาดเล็ก
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ACTIVITY 04 -->
+
+            <article class="gallery-activity">
+
+                <div class="gallery-images">
+
+                    <div>
+                        <img src="images/activity5.jpg"
+                            alt="IS THIS GOOD">
+                    </div>
+
+                    <div>
+                        <img src="images/activity6.jpg"
+                            alt="IS THIS GOOD">
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-text">
+
+                    <span class="activity-label">
+                        MORAL ACTIVITY
+                    </span>
+
+                    <h2>
+                        IS THIS GOOD V.3
+                        <br>
+                        # ASK YOUR HEART
+                    </h2>
+
+                    <p>
+                        มูลนิธิวิถีธรรมชลบุรี
+                        อาณาจักรธรรมกรุงเทพฯ เขตบ่อยชลบุรี
+                    </p>
+
+                    <div class="activity-date">
+                        20 - 21 มิถุนายน 2569
+                    </div>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้ดูแลและจัดกิจกรรมเสริมสร้าง
+                            คุณธรรมจริยธรรมให้แก่เด็ก
+                            เพื่อขัดเกลาจิตใจ ปลูกฝังคุณธรรมจริยธรรม
+                            ให้เติบโตเป็นผู้ใหญ่ที่ดีของสังคม
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ======================================
+             CONTACT
+        ======================================= -->
+
+        <section id="contact" class="page">
+
+
+            <div class="page-title">
+
+                <span>04</span>
+
+                <h1>ช่องทางการติดต่อ</h1>
+
+                <p>
+                    CONTACT
+                </p>
+
+            </div>
+
+
+            <div class="contact-layout">
+
+
+                <div class="contact-intro">
+
+                    <span>
+                        LET'S CONNECT
+                    </span>
+
+                    <h2>
+                        Thank you for<br>
+                        visiting my<br>
+                        portfolio.
+                    </h2>
+
+                    <div class="contact-line"></div>
+
+                </div>
+
+
+
+                <div class="contact-list">
+
+
+                    <a class="contact-card"
+                        href="mailto:kelakeliyngb@gmail.com">
+
+                        <span class="contact-icon">
+                            ✉
+                        </span>
+
+                        <div>
+
+                            <small>
+                                GMAIL
+                            </small>
+
+                            <strong>
+                                kelakeliyngb@gmail.com
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="contact-card"
+                        href="tel:0805057578">
+
+                        <span class="contact-icon">
+                            ☎
+                        </span>
+
+                        <div>
+
+                            <small>
+                                TELEPHONE
+                            </small>
+
+                            <strong>
+                                0805057578
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <div class="contact-card">
+
+                        <span class="contact-icon">
+                            ◎
+                        </span>
+
+                        <div>
+
+                            <small>
+                                LINE ID
+                            </small>
+
+                            <strong>
+                                bonus_benyapa
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-footer">
+                BENYAPA KELAKLIENG · PORTFOLIO 2026
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
+/* ==================================================
+   COLOR SYSTEM
+================================================== */
+
+:root {
+
+    --background: #c2597c;
+
+    --heading: #db86a2;
+
+    --text: #1a0c11;
+
+    --glass: rgba(219, 134, 162, 0.18);
+
+    --border: rgba(26, 12, 17, 0.15);
+
+}
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family: "Kanit", sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+.sidebar {
+
+    position: fixed;
+
+    width: 270px;
+
+    height: 100vh;
+
+    left: 0;
+    top: 0;
+
+    padding: 45px 35px;
+
+    border-right: 1px solid var(--border);
+
+    display: flex;
+
+    flex-direction: column;
+
+    z-index: 100;
+
+}
+
+
+/* BRAND */
+
+.brand {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+}
+
+
+.brand-line {
+
+    width: 4px;
+
+    height: 45px;
+
+    background: var(--heading);
+
+}
+
+
+.brand span {
+
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.brand strong {
+
+    display: block;
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+    color: var(--heading);
+
+}
+
+
+/* MENU */
+
+.menu {
+
+    margin-top: 90px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.menu-item {
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text);
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    text-align: left;
+
+    padding: 16px 12px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.menu-item .number {
+
+    font-size: 11px;
+
+    opacity: 0.55;
+
+}
+
+
+.menu-item:hover {
+
+    background: var(--glass);
+
+    transform: translateX(6px);
+
+}
+
+
+.menu-item.active {
+
+    background: var(--glass);
+
+    color: var(--text);
+
+}
+
+
+.menu-item.active .number {
+
+    color: var(--heading);
+
+    opacity: 1;
+
+}
+
+
+/* FOOTER */
+
+.sidebar-footer {
+
+    margin-top: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    opacity: 0.6;
+
+}
+
+
+.sidebar-footer span {
+
+    letter-spacing: 5px;
+
+    font-size: 11px;
+
+}
+
+
+.sidebar-footer small {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ==================================================
+   MAIN
+================================================== */
+
+.main {
+
+    margin-left: 270px;
+
+    min-height: 100vh;
+
+}
+
+
+.page {
+
+    min-height: 100vh;
+
+    padding: 75px 8% 100px;
+
+    display: none;
+
+}
+
+
+.page.active {
+
+    display: block;
+
+    animation: pageIn 0.6s ease;
+
+}
+
+
+@keyframes pageIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==================================================
+   HOME
+================================================== */
+
+.home-container {
+
+    min-height: calc(100vh - 175px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+.home-top {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.mini-title {
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: var(--heading);
+
+    white-space: nowrap;
+
+}
+
+
+.decor-line {
+
+    height: 1px;
+
+    background: var(--border);
+
+    flex: 1;
+
+}
+
+
+.portfolio-title {
+
+    color: var(--heading);
+
+    font-size: clamp(65px, 9vw, 125px);
+
+    line-height: 0.78;
+
+    letter-spacing: 12px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.portfolio-title span {
+
+    padding-left: 60px;
+
+}
+
+
+/* MAIN IMAGE */
+
+.main-photo {
+
+    width: min(32vw, 420px);
+
+    height: min(43vw, 560px);
+
+    max-height: 55vh;
+
+    position: relative;
+
+    margin-bottom: 35px;
+
+}
+
+
+.main-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    display: block;
+
+    box-shadow:
+        0 30px 70px rgba(26, 12, 17, 0.20);
+
+}
+
+
+.photo-number {
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: 25px;
+
+    color: var(--heading);
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.home-info h2 {
+
+    font-size: clamp(28px, 3vw, 44px);
+
+    font-weight: 600;
+
+}
+
+
+.school {
+
+    font-size: 18px;
+
+    margin-top: 3px;
+
+}
+
+
+.university {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-top: 5px;
+
+}
+
+
+.scroll-text {
+
+    margin-top: 35px;
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    opacity: 0.45;
+
+}
+
+
+/* ==================================================
+   PAGE TITLE
+================================================== */
+
+.page-title {
+
+    margin-bottom: 65px;
+
+    position: relative;
+
+}
+
+
+.page-title > span {
+
+    color: var(--heading);
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.page-title h1 {
+
+    font-size: clamp(45px, 6vw, 78px);
+
+    line-height: 1;
+
+    margin-top: 5px;
+
+    font-weight: 600;
+
+}
+
+
+.page-title p {
+
+    color: var(--heading);
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    margin-top: 12px;
+
+}
+
+
+/* ==================================================
+   PREFACE
+================================================== */
+
+.preface-layout {
+
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 35px;
+
+}
+
+
+.vertical-text {
+
+    writing-mode: vertical-rl;
+
+    letter-spacing: 8px;
+
+    color: var(--heading);
+
+    font-size: 12px;
+
+}
+
+
+.text-card {
+
+    position: relative;
+
+    padding: 65px;
+
+    border: 1px solid var(--border);
+
+    background: var(--glass);
+
+    border-radius: 3px;
+
+}
+
+
+.quote-mark {
+
+    color: var(--heading);
+
+    font-size: 90px;
+
+    line-height: 0.5;
+
+    position: absolute;
+
+    top: 40px;
+
+    left: 35px;
+
+}
+
+
+.text-card p {
+
+    font-size: clamp(17px, 1.6vw, 21px);
+
+    line-height: 2.2;
+
+    margin-bottom: 25px;
+
+}
+
+
+.signature {
+
+    color: var(--heading);
+
+    letter-spacing: 7px;
+
+    font-size: 12px;
+
+    margin-top: 45px;
+
+}
+
+
+/* ==================================================
+   PROFILE
+================================================== */
+
+.profile-layout {
+
+    max-width: 1150px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+.info-card {
+
+    padding: 40px;
+
+    border: 1px solid var(--border);
+
+    background: var(--glass);
+
+    border-radius: 3px;
+
+    position: relative;
+
+}
+
+
+.card-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    color: var(--heading);
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.info-card h2 {
+
+    font-size: 29px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.info-row {
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+.info-row span {
+
+    font-size: 12px;
+
+    opacity: 0.55;
+
+}
+
+
+.info-row strong {
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+}
+
+
+.education-main {
+
+    padding: 20px 0 30px;
+
+}
+
+
+.education-main span {
+
+    color: var(--heading);
+
+    letter-spacing: 4px;
+
+    font-size: 10px;
+
+}
+
+
+.education-main h3 {
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+
+}
+
+
+.gpax {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.gpax span {
+
+    letter-spacing: 4px;
+
+    color: var(--heading);
+
+}
+
+
+.gpax strong {
+
+    font-size: 60px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==================================================
+   ACTIVITIES
+================================================== */
+
+.activity {
+
+    max-width: 1150px;
+
+    display: grid;
+
+    grid-template-columns: 42% 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    padding: 35px 0;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.activity-image {
+
+    position: relative;
+
+}
+
+
+.activity-image img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: contain;
+
+    background: rgba(219, 134, 162, 0.13);
+
+    display: block;
+
+}
+
+
+.activity-image > span {
+
+    position: absolute;
+
+    right: -15px;
+
+    bottom: -15px;
+
+    background: var(--background);
+
+    color: var(--heading);
+
+    border: 1px solid var(--border);
+
+    padding: 10px 15px;
+
+    font-size: 12px;
+
+}
+
+
+.activity-content {
+
+    padding: 15px 0;
+
+}
+
+
+.activity-label {
+
+    color: var(--heading);
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.activity-content h2 {
+
+    font-size: clamp(24px, 2.4vw, 35px);
+
+    line-height: 1.45;
+
+    margin: 12px 0 15px;
+
+}
+
+
+.activity-content p {
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 8px;
+
+}
+
+
+.activity-date {
+
+    margin: 15px 0;
+
+    font-size: 13px;
+
+    color: var(--heading);
+
+}
+
+
+.learning {
+
+    margin-top: 20px;
+
+    padding: 18px 20px;
+
+    border-left: 2px solid var(--heading);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.learning strong {
+
+    font-size: 13px;
+
+}
+
+
+.learning span {
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==================================================
+   GALLERY ACTIVITIES
+================================================== */
+
+.gallery-activity {
+
+    max-width: 1150px;
+
+    padding: 50px 0;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.gallery-images {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.gallery-images div {
+
+    overflow: hidden;
+
+    background: var(--glass);
+
+}
+
+
+.gallery-images img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.gallery-images img:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+.gallery-text {
+
+    max-width: 850px;
+
+}
+
+
+.gallery-text h2 {
+
+    font-size: clamp(27px, 3vw, 42px);
+
+    line-height: 1.4;
+
+    margin: 10px 0;
+
+}
+
+
+.gallery-text p {
+
+    line-height: 1.8;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact-layout {
+
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.contact-intro > span {
+
+    color: var(--heading);
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.contact-intro h2 {
+
+    font-size: clamp(40px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+
+}
+
+
+.contact-line {
+
+    width: 100px;
+
+    height: 2px;
+
+    background: var(--heading);
+
+}
+
+
+.contact-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.contact-card {
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+
+    background: var(--glass);
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-card:hover {
+
+    transform: translateX(8px);
+
+    background: rgba(219, 134, 162, 0.28);
+
+}
+
+
+.contact-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: 1px solid var(--border);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+.contact-card small {
+
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--heading);
+
+}
+
+
+.contact-card strong {
+
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    margin-top: 3px;
+
+}
+
+
+.contact-footer {
+
+    margin-top: 100px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.5;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+
+        width: 220px;
+
+        padding: 35px 25px;
+
+    }
+
+
+    .main {
+
+        margin-left: 220px;
+
+    }
+
+
+    .page {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+    }
+
+
+    .profile-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-layout {
+
+        gap: 40px;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+
+    }
+
+
+    .brand {
+
+        justify-content: center;
+
+    }
+
+
+    .menu {
+
+        margin-top: 25px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5px;
+
+    }
+
+
+    .menu-item {
+
+        font-size: 13px;
+
+        padding: 12px 8px;
+
+        gap: 8px;
+
+    }
+
+
+    .sidebar-footer {
+
+        display: none;
+
+    }
+
+
+    .main {
+
+        margin-left: 0;
+
+    }
+
+
+    .page {
+
+        padding: 45px 20px 70px;
+
+    }
+
+
+    .home-container {
+
+        min-height: auto;
+
+    }
+
+
+    .home-top {
+
+        margin-top: 20px;
+
+    }
+
+
+    .portfolio-title {
+
+        font-size: 65px;
+
+        letter-spacing: 7px;
+
+    }
+
+
+    .portfolio-title span {
+
+        padding-left: 25px;
+
+    }
+
+
+    .main-photo {
+
+        width: min(78vw, 350px);
+
+        height: min(105vw, 460px);
+
+        max-height: none;
+
+    }
+
+
+    .page-title {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .preface-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .vertical-text {
+
+        display: none;
+
+    }
+
+
+    .text-card {
+
+        padding: 45px 25px;
+
+    }
+
+
+    .profile-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .info-card {
+
+        padding: 30px 22px;
+
+    }
+
+
+    .activity {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .gallery-images {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-intro h2 {
+
+        font-size: 48px;
+
+    }
+
+}
+function openPage(pageId, button) {
+
+    // ซ่อนทุกหน้า
+    const pages = document.querySelectorAll(".page");
+
+    pages.forEach(page => {
+
+        page.classList.remove("active");
+
+    });
+
+
+    // แสดงหน้าที่เลือก
+    const selectedPage = document.getElementById(pageId);
+
+    if (selectedPage) {
+
+        selectedPage.classList.add("active");
+
+    }
+
+
+    // เปลี่ยนปุ่มเมนูที่ active
+    const menuItems = document.querySelectorAll(".menu-item");
+
+    menuItems.forEach(item => {
+
+        item.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+    // กลับขึ้นไปด้านบน
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
