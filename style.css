@@ -2120,3 +2120,408 @@ img {
     }
 
 }
+/* =====================================================
+   PORTFOLIO DESIGN
+   แนววิทยาศาสตร์ / พยาบาล
+   สีหลักเดิม #c2597c
+===================================================== */
+/* =====================================================
+   COVER : หน้าปก
+===================================================== */
+#home {
+    background: #c2597c;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+/* ลายวงกลมด้านหลัง */
+#home::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border: 2px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+    top: -180px;
+    right: -150px;
+}
+/* วงกลมเล็ก */
+#home::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    bottom: -80px;
+    left: -60px;
+}
+/* กล่องหลัก */
+#home .home-container {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+/* เส้นตกแต่งด้านบน */
+#home .home-top {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+/* PERSONAL PORTFOLIO */
+#home .mini-title {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    white-space: nowrap;
+}
+/* เส้น */
+#home .decor-line {
+    width: 70px;
+    height: 2px;
+    background: white;
+    opacity: 0.7;
+}
+/* =====================================================
+   รูปหลัก
+===================================================== */
+#home .main-photo {
+    position: relative;
+    width: min(30vw, 390px);
+    height: min(58vh, 520px);
+    margin-bottom: 28px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow:
+        12px 12px 0 rgba(80, 25, 48, 0.18),
+        0 20px 45px rgba(0,0,0,0.18);
+    transform: rotate(-2deg);
+    transition: 0.4s ease;
+}
+/* รูปภาพ */
+#home .main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+    border-radius: 0;
+}
+/* เวลาเอาเมาส์ไปวาง */
+#home .main-photo:hover {
+    transform: rotate(0deg) translateY(-8px);
+    box-shadow:
+        16px 16px 0 rgba(80, 25, 48, 0.18),
+        0 25px 55px rgba(0,0,0,0.22);
+}
+/* =====================================================
+   หมายเลข 01 บนรูป
+===================================================== */
+#home .main-photo::before {
+    content: "01";
+    position: absolute;
+    left: -18px;
+    top: 25px;
+    width: 55px;
+    height: 55px;
+    background: white;
+    color: #c2597c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.12);
+}
+/* เส้นตกแต่งข้างรูป */
+#home .main-photo::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: 35px;
+    width: 65px;
+    height: 65px;
+    border: 2px solid white;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+/* =====================================================
+   ข้อมูลหน้าปก
+===================================================== */
+#home .home-info {
+    width: min(90%, 850px);
+    position: relative;
+    padding: 10px 20px 25px;
+}
+/* เส้นด้านบนของข้อมูล */
+#home .home-info::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: white;
+    margin: 0 auto 20px;
+}
+/* ชื่อ */
+#home .home-info h1 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: clamp(28px, 3vw, 46px);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* โรงเรียน */
+#home .home-info h2 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: clamp(17px, 1.8vw, 25px);
+    font-weight: 400;
+}
+/* มหาวิทยาลัย */
+#home .home-info p {
+    margin: 0;
+    color: white;
+    font-size: clamp(14px, 1.3vw, 19px);
+    font-weight: 300;
+    line-height: 1.7;
+}
+/* =====================================================
+   เส้นกราฟิกมุมล่าง
+===================================================== */
+#home .home-container::after {
+    content: "+  PORTFOLIO  /  2026";
+    position: absolute;
+    right: 40px;
+    bottom: 25px;
+    color: rgba(255,255,255,0.65);
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+/* =====================================================
+   PREFACE : คำนำ
+===================================================== */
+#preface {
+    background: #c2597c;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+/* วงกลมตกแต่ง */
+#preface::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+    right: -200px;
+    top: -150px;
+}
+/* วงกลมอีกด้าน */
+#preface::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 2px solid rgba(255,255,255,0.13);
+    border-radius: 50%;
+    left: -110px;
+    bottom: -80px;
+}
+/* =====================================================
+   TITLE
+===================================================== */
+#preface .page-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-top: 60px;
+    padding-left: 7%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+/* เลข 02 */
+#preface .page-title span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* หัวข้อ */
+#preface .page-title h1 {
+    color: white;
+    font-size: clamp(35px, 4vw, 60px);
+    margin: 0;
+    font-weight: 600;
+}
+/* PREFACE */
+#preface .page-title p {
+    color: rgba(255,255,255,0.65);
+    margin: 10px 0 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+/* =====================================================
+   PREFACE LAYOUT
+===================================================== */
+#preface .preface-layout {
+    position: relative;
+    z-index: 2;
+    width: 86%;
+    max-width: 1100px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 35px;
+    align-items: stretch;
+}
+/* ตัวอักษรแนวตั้ง */
+#preface .vertical-text {
+    color: rgba(255,255,255,0.65);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 13px;
+    letter-spacing: 7px;
+    padding: 20px 0;
+    border-left: 2px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+/* =====================================================
+   กล่องข้อความคำนำ
+===================================================== */
+#preface .text-card {
+    position: relative;
+    background: white;
+    color: #4d2535;
+    padding: 55px 65px;
+    min-height: 350px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow:
+        15px 15px 0 rgba(80, 25, 48, 0.22),
+        0 20px 45px rgba(0,0,0,0.15);
+    transform: rotate(1deg);
+    transition: 0.4s ease;
+}
+/* กล่องกลับมาตรงเมื่อ hover */
+#preface .text-card:hover {
+    transform: rotate(0deg) translateY(-5px);
+    box-shadow:
+        18px 18px 0 rgba(80, 25, 48, 0.22),
+        0 25px 50px rgba(0,0,0,0.18);
+}
+/* เครื่องหมายคำพูด */
+#preface .quote-mark {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    color: #c2597c;
+    font-family: Georgia, serif;
+    font-size: 75px;
+    line-height: 1;
+    opacity: 0.8;
+}
+/* ข้อความ */
+#preface .text-card p {
+    position: relative;
+    color: #4d2535;
+    font-size: clamp(16px, 1.35vw, 21px);
+    line-height: 2;
+    margin: 15px 0;
+    font-weight: 300;
+}
+/* =====================================================
+   เส้นตกแต่งใต้กล่อง
+===================================================== */
+#preface .text-card::after {
+    content: "BENYAPA  •  PORTFOLIO 2026";
+    position: absolute;
+    right: 30px;
+    bottom: 18px;
+    color: #c2597c;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+/* =====================================================
+   RESPONSIVE : โทรศัพท์ / iPad
+===================================================== */
+@media (max-width: 768px) {
+    #home .home-container {
+        padding: 35px 20px 60px;
+    }
+    #home .main-photo {
+        width: min(65vw, 330px);
+        height: 430px;
+    }
+    #home .home-info h1 {
+        font-size: 28px;
+    }
+    #home .home-info h2 {
+        font-size: 17px;
+    }
+    #home .home-info p {
+        font-size: 14px;
+    }
+    #home .home-container::after {
+        right: 20px;
+        bottom: 15px;
+        font-size: 8px;
+    }
+    #preface .page-title {
+        padding-top: 35px;
+        padding-left: 25px;
+        gap: 12px;
+    }
+    #preface .page-title span {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    #preface .page-title h1 {
+        font-size: 34px;
+    }
+    #preface .preface-layout {
+        width: 88%;
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+    }
+    #preface .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        border-left: none;
+        border-bottom: 2px solid rgba(255,255,255,0.4);
+        padding: 0 0 10px;
+        text-align: left;
+    }
+    #preface .text-card {
+        padding: 55px 28px 60px;
+        min-height: auto;
+    }
+    #preface .text-card p {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}
