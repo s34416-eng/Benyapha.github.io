@@ -106,104 +106,164 @@
     <main class="main">
 
 
-        <!-- ======================================
-             HOME
-        ======================================= -->
-
-        <section id="home" class="page active">
-
-            <div class="home-container">
-
-
-                <div class="home-top">
-
-                    <span class="mini-title">
-                        PERSONAL PORTFOLIO
-                    </span>
-
-                    <div class="decor-line"></div>
-
-                </div>
-
-
-                <h1 class="portfolio-title">
-                    PORT<br>
-                    <span>FOLIO</span>
-                </h1>
-
-
-                <!-- รูปภาพหลัก -->
-
-                <div class="main-photo">
-
-                    <img src="images/profile.jpg"
-                        alt="Benyapa">
-
-                    <div class="photo-number">
-                        01
-                    </div>
-
-                </div>
-
-
-                <div class="home-info">
-
-                    <h2>
-                        น.ส.เบญญาภา เกลาเกลี้ยง
-                    </h2>
-
-                    <p class="school">
-                        โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
-                    </p>
-
-                    <p class="university">
-                        คณะพยาบาลศาสตร์ สาขาพยาบาลศาสตร์
-                        <br>
-                        จุฬาลงกรณ์มหาวิทยาลัย
-                    </p>
-
-
-                    
-                    <p>
-                        &nbsp;&nbsp;แฟ้มสะสมผลงาน (Portfolio) เล่มนี้
-                        จัดทำขึ้นเพื่อเป็นตัวแทนในการนำเสนอข้อมูลเกี่ยวกับ
-                        ประวัติส่วนตัว ความรู้ ความสามารถ ทักษะ และกิจกรรมต่างๆ
-                        ของข้าพเจ้า โดยเฉพาะความสนใจและความมุ่งมั่นที่มีต่อการศึกษาต่อ
-                    </p>
-
-
-                    <p>
-                        &nbsp;&nbsp;ภายในแฟ้มสะสมผลงานเล่มนี้ ประกอบด้วย
-                        ประวัติส่วนตัว ผลการเรียน กิจกรรมที่ข้าพเจ้าได้เข้าร่วม
-                    </p>
-
-
-                    <div class="signature">
-                        BENYAPA
-                    </div>
-
-                </div>
-
+<!-- ======================================
+     COVER / หน้าปก
+====================================== -->
+<section id="home" class="page active">
+    <div class="home-container">
+        <div class="home-top">
+            <span class="mini-title">
+                PERSONAL PORTFOLIO
+            </span>
+            <div class="decor-line"></div>
+        </div>
+        <!-- รูปภาพหน้าปก -->
+        <div class="main-photo">
+            <img src="images/profile.jpg"
+                alt="Benyapa">
+        </div>
+        <!-- ข้อมูลใต้รูป -->
+        <div class="home-info">
+            <h1>
+                น.ส.เบญญาภา เกลาเกลี้ยง
+            </h1>
+            <h2>
+                โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
+            </h2>
+            <p class="university">
+                คณะพยาบาลศาสตร์ สาขาพยาบาลศาสตร์
+                <br>
+                จุฬาลงกรณ์มหาวิทยาลัย
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ======================================
+     PREFACE / คำนำ
+====================================== -->
+<section id="preface" class="page">
+    <div class="page-title">
+        <span>02</span>
+        <h1>คำนำ</h1>
+        <p>
+            PREFACE
+        </p>
+    </div>
+    <div class="preface-layout">
+        <div class="vertical-text">
+            PORTFOLIO
+        </div>
+        <div class="text-card">
+            <div class="quote-mark">
+                “
             </div>
+            <p>
+                &nbsp;&nbsp;แฟ้มสะสมผลงาน (Portfolio) เล่มนี้
+                จัดทำขึ้นเพื่อเป็นตัวแทนในการนำเสนอข้อมูลเกี่ยวกับ
+                ประวัติส่วนตัว ความรู้ ความสามารถ ทักษะ และกิจกรรมต่างๆ
+                ของข้าพเจ้า โดยเฉพาะความสนใจและความมุ่งมั่นที่มีต่อการศึกษาต่อ
+            </p>
+            <p>
+                &nbsp;&nbsp;ภายในแฟ้มสะสมผลงานเล่มนี้ ประกอบด้วย
+                ประวัติส่วนตัว ผลการเรียน กิจกรรมที่ข้าพเจ้าได้เข้าร่วม
+            </p>
+        </div>
+    </div>
+</section>
 
-        </section>
+CSS เพิ่มเฉพาะหน้าปกและคำนำ — ให้นำไปต่อท้าย style.css เดิม โดยไม่ต้องลบ CSS อื่น:
 
-                </div>
-
-
-                <div class="scroll-text">
-                    SCROLL TO EXPLORE
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ======================================
-             PREFACE
-        ======================================= -->
+/* ======================================
+   COVER / หน้าปก
+====================================== */
+#home {
+    background: #c2597c;
+    min-height: 100vh;
+    color: white;
+}
+#home .home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#home .home-top {
+    margin-bottom: 25px;
+}
+#home .mini-title {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+#home .decor-line {
+    background: rgba(255,255,255,0.6);
+}
+/* รูปหน้าปก */
+#home .main-photo {
+    width: min(33vw, 430px);
+    height: min(65vh, 620px);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+#home .main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+/* ข้อความหน้าปก */
+#home .home-info h1 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: clamp(28px, 3vw, 48px);
+    font-weight: 600;
+}
+#home .home-info h2 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: clamp(18px, 1.8vw, 28px);
+    font-weight: 400;
+}
+#home .home-info p {
+    margin: 0;
+    color: white;
+    font-size: clamp(15px, 1.3vw, 21px);
+    font-weight: 300;
+    line-height: 1.6;
+}
+/* ======================================
+   PREFACE / คำนำ
+====================================== */
+#preface {
+    background: #c2597c;
+    min-height: 100vh;
+    color: white;
+}
+#preface .page-title {
+    color: white;
+}
+#preface .page-title h1,
+#preface .page-title p,
+#preface .page-title span {
+    color: white;
+}
+#preface .text-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: white;
+}
+#preface .text-card p {
+    color: white;
+    font-size: clamp(17px, 1.4vw, 22px);
+    line-height: 2;
+}
 
         <section id="preface" class="page">
 
