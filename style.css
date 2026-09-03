@@ -1352,3 +1352,697 @@ img {
         left: 15px;
     }
 }
+/* =====================================================
+   NURSING POSTER BACKGROUND
+   PINK × GOLD × MEDICAL
+===================================================== */
+
+:root {
+    --gold: #d8b765;
+    --gold-light: #f3d98d;
+    --pink: #c2597c;
+    --pink-dark: #8f3455;
+    --cream: #fff8f4;
+}
+
+
+/* =====================================================
+   พื้นหลังทุกหน้า
+===================================================== */
+
+.page {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #c2597c 0%,
+            #c2597c 45%,
+            #a94465 100%
+        ) !important;
+}
+
+
+/* =====================================================
+   รูปทรงเรขาคณิตขนาดใหญ่
+===================================================== */
+
+.page::before {
+    content: "✚";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -150px;
+    top: -150px;
+
+    border: 2px solid rgba(243,217,141,0.45);
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 95px;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow:
+        0 0 25px rgba(243,217,141,0.35);
+
+    box-shadow:
+        0 0 0 35px rgba(243,217,141,0.035),
+        0 0 0 70px rgba(243,217,141,0.025),
+        0 0 0 110px rgba(243,217,141,0.018);
+
+    opacity: 0.75;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation: nursingFloat 8s ease-in-out infinite alternate;
+}
+
+
+/* วงกลมด้านซ้ายล่าง */
+
+.page::after {
+    content: "⚕";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    left: -110px;
+    bottom: -90px;
+
+    border: 2px solid rgba(243,217,141,0.45);
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow:
+        0 0 20px rgba(243,217,141,0.4);
+
+    box-shadow:
+        0 0 0 20px rgba(243,217,141,0.035),
+        0 0 0 45px rgba(243,217,141,0.025);
+
+    opacity: 0.8;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   แผ่นกราฟิกเฉียงแบบโปสเตอร์
+===================================================== */
+
+.page {
+    isolation: isolate;
+}
+
+.page > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* แถบเฉียงด้านขวา */
+
+.page .page-title::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 110px;
+
+    right: -180px;
+    top: 130px;
+
+    background:
+        rgba(243,217,141,0.08);
+
+    border-top:
+        1px solid rgba(243,217,141,0.35);
+
+    border-bottom:
+        1px solid rgba(243,217,141,0.25);
+
+    transform: rotate(-25deg);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* =====================================================
+   สัญลักษณ์พยาบาลรอบ ๆ หน้า
+===================================================== */
+
+.page-title {
+    position: relative;
+}
+
+
+/* สัญลักษณ์ด้านขวาบน */
+
+.page-title::before {
+    content: "✚   ⚕   ✦";
+
+    position: absolute;
+
+    right: 30px;
+    top: -10px;
+
+    color: var(--gold-light);
+
+    font-size: 25px;
+
+    letter-spacing: 12px;
+
+    opacity: 0.9;
+
+    text-shadow:
+        0 0 15px rgba(243,217,141,0.5);
+
+    animation: symbolFloat 5s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   01 หน้าปก
+===================================================== */
+
+#home {
+    background:
+        linear-gradient(
+            120deg,
+            rgba(255,255,255,0.04),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #c2597c 0%,
+            #c2597c 55%,
+            #9f3e60 100%
+        ) !important;
+}
+
+
+/* วงกลมด้านหลังรูป */
+
+#home .home-container::before {
+    content: "✚";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -200px;
+    top: 5%;
+
+    border: 3px solid rgba(243,217,141,0.28);
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 0 35px rgba(243,217,141,0.04),
+        0 0 0 75px rgba(243,217,141,0.025);
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* สัญลักษณ์เล็กหลายตัวมุมซ้าย */
+
+#home .home-container::after {
+    content:
+        "✚"
+        "\A"
+        "⚕"
+        "\A"
+        "✦";
+
+    white-space: pre;
+
+    position: absolute;
+
+    left: 45px;
+    bottom: 90px;
+
+    color: var(--gold-light);
+
+    font-size: 30px;
+
+    line-height: 2;
+
+    text-align: center;
+
+    opacity: 0.8;
+
+    text-shadow:
+        0 0 15px rgba(243,217,141,0.45);
+
+    transform: rotate(-8deg);
+
+    z-index: -1;
+}
+
+
+/* ทองใต้ชื่อ */
+
+#home .home-info::after {
+    content: "✚  •  ⚕  •  ✚";
+
+    display: block;
+
+    margin-top: 18px;
+
+    color: var(--gold-light);
+
+    font-size: 18px;
+
+    letter-spacing: 7px;
+
+    opacity: 0.8;
+}
+
+
+/* =====================================================
+   รูปหน้าปกให้เหมือนโปสเตอร์
+===================================================== */
+
+#home .main-photo {
+    border: 3px solid var(--gold-light);
+
+    box-shadow:
+        12px 12px 0 rgba(70,20,40,0.25),
+        0 25px 60px rgba(40,5,20,0.25);
+}
+
+
+/* =====================================================
+   02 คำนำ
+===================================================== */
+
+#preface {
+    background:
+        linear-gradient(
+            135deg,
+            #c2597c,
+            #b34e70 60%,
+            #963957
+        ) !important;
+}
+
+
+/* วงกลมใหญ่ด้านหลัง */
+
+#preface .preface-layout::before {
+    content: "⚕";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -270px;
+    top: -100px;
+
+    border: 2px solid rgba(243,217,141,0.35);
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 0 30px rgba(243,217,141,0.03),
+        0 0 0 65px rgba(243,217,141,0.02);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* คำนำกล่องสีครีม */
+
+#preface .text-card {
+    border: 2px solid var(--gold-light);
+
+    box-shadow:
+        12px 12px 0 rgba(80,25,48,0.25),
+        0 25px 60px rgba(0,0,0,0.18);
+}
+
+
+/* เครื่องหมายพยาบาลบนกล่อง */
+
+#preface .text-card::before {
+    content: "✚   ⚕";
+
+    color: var(--gold);
+
+    font-size: 25px;
+
+    letter-spacing: 8px;
+
+    opacity: 1;
+}
+
+
+/* =====================================================
+   03 ประวัติส่วนตัว
+===================================================== */
+
+#profile {
+    background:
+        linear-gradient(
+            135deg,
+            #c2597c,
+            #b44d6e 55%,
+            #963957
+        ) !important;
+}
+
+
+/* วงกลมใหญ่ */
+
+#profile .profile-layout::before {
+    content: "✚";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    right: -240px;
+    top: 50px;
+
+    border: 2px solid rgba(243,217,141,0.35);
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 0 30px rgba(243,217,141,0.035),
+        0 0 0 65px rgba(243,217,141,0.02);
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* การ์ด */
+
+#profile .info-card {
+    border: 1px solid rgba(243,217,141,0.45);
+
+    box-shadow:
+        0 20px 55px rgba(60,10,30,0.20);
+}
+
+
+/* =====================================================
+   04 ผลงานและกิจกรรม
+===================================================== */
+
+#activities {
+    background:
+        linear-gradient(
+            135deg,
+            #c2597c,
+            #b04a6b 55%,
+            #913550
+        ) !important;
+}
+
+
+/* เส้นเฉียงขนาดใหญ่ */
+
+#activities::before {
+    content: "✚";
+
+    width: 520px;
+    height: 520px;
+
+    right: -250px;
+    top: 20%;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(243,217,141,0.28);
+
+    color: var(--gold-light);
+
+    font-size: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: none;
+
+    box-shadow:
+        0 0 0 35px rgba(243,217,141,0.03),
+        0 0 0 75px rgba(243,217,141,0.02);
+}
+
+
+/* สัญลักษณ์มุมซ้าย */
+
+#activities::after {
+    content: "⚕  ✚  ✦";
+
+    width: auto;
+    height: auto;
+
+    left: 25px;
+    bottom: 50px;
+
+    border: none;
+
+    color: var(--gold-light);
+
+    font-size: 25px;
+
+    letter-spacing: 8px;
+
+    box-shadow: none;
+}
+
+
+/* =====================================================
+   05 ติดต่อ
+===================================================== */
+
+#contact {
+    background:
+        linear-gradient(
+            135deg,
+            #c2597c,
+            #b34d6e 50%,
+            #923651
+        ) !important;
+}
+
+
+/* วงกลมด้านขวา */
+
+#contact::before {
+    content: "⚕";
+
+    width: 500px;
+    height: 500px;
+
+    right: -250px;
+    top: -160px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(243,217,141,0.35);
+
+    color: var(--gold-light);
+
+    font-size: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 0 35px rgba(243,217,141,0.03),
+        0 0 0 75px rgba(243,217,141,0.02);
+}
+
+
+/* สัญลักษณ์มุมล่าง */
+
+#contact::after {
+    content: "✚   ♡   ⚕";
+
+    width: auto;
+    height: auto;
+
+    left: 30px;
+    bottom: 40px;
+
+    border: none;
+
+    color: var(--gold-light);
+
+    font-size: 27px;
+
+    letter-spacing: 8px;
+
+    box-shadow: none;
+}
+
+
+/* การ์ดติดต่อ */
+
+#contact .contact-card {
+    border-color: rgba(243,217,141,0.45);
+}
+
+#contact .contact-card:hover {
+    border-color: var(--gold-light);
+
+    box-shadow:
+        0 15px 45px rgba(40,5,20,0.25);
+}
+
+
+/* =====================================================
+   GOLD LINE
+===================================================== */
+
+.page-title h1 {
+    text-shadow:
+        3px 3px 0 rgba(90,20,45,0.18);
+}
+
+.page-title > span {
+    color: var(--gold-light);
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes nursingFloat {
+
+    from {
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-15px,15px) rotate(5deg);
+    }
+}
+
+@keyframes symbolFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .page::before {
+        width: 280px;
+        height: 280px;
+
+        right: -150px;
+        top: -80px;
+
+        font-size: 60px;
+    }
+
+    .page::after {
+        width: 150px;
+        height: 150px;
+
+        left: -80px;
+        bottom: -50px;
+
+        font-size: 45px;
+    }
+
+    #home .home-container::before {
+        width: 300px;
+        height: 300px;
+
+        right: -160px;
+
+        font-size: 70px;
+    }
+
+    #home .home-container::after {
+        left: 15px;
+        bottom: 70px;
+
+        font-size: 20px;
+    }
+
+    .page-title::before {
+        font-size: 17px;
+        right: 5px;
+        letter-spacing: 5px;
+    }
+
+    .page .page-title::after {
+        width: 300px;
+        right: -150px;
+    }
+}
