@@ -1,361 +1,674 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio | เบญญาภา เกลาเกลี้ยง</title>
+    <title>Portfolio | Benyapa Kela Kliang</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= SIDEBAR ================= -->
+    <!-- ======================================
+         SIDEBAR
+    ======================================= -->
+
     <aside class="sidebar">
 
-        <div class="logo">
-            PORTFOLIO
+        <div class="brand">
+
+            <div class="brand-line"></div>
+
+            <div>
+                <span>MY</span>
+                <strong>PORTFOLIO</strong>
+            </div>
+
         </div>
 
-        <nav>
-            <button class="nav-btn active" onclick="showPage('home', this)">
-                <span>01</span>
-                คำนำ
+
+        <nav class="menu">
+
+            <button class="menu-item active" onclick="openPage('home', this)">
+
+                <span class="number">01</span>
+
+                <span>
+                    คำนำ
+                </span>
+
             </button>
 
-            <button class="nav-btn" onclick="showPage('profile', this)">
-                <span>02</span>
-                ประวัติส่วนตัว
+
+            <button class="menu-item" onclick="openPage('profile', this)">
+
+                <span class="number">02</span>
+
+                <span>
+                    ประวัติส่วนตัว
+                </span>
+
             </button>
 
-            <button class="nav-btn" onclick="showPage('activities', this)">
-                <span>03</span>
-                ผลงานและกิจกรรม
+
+            <button class="menu-item" onclick="openPage('activities', this)">
+
+                <span class="number">03</span>
+
+                <span>
+                    ผลงานและกิจกรรม
+                </span>
+
             </button>
 
-            <button class="nav-btn" onclick="showPage('contact', this)">
-                <span>04</span>
-                ช่องทางการติดต่อ
+
+            <button class="menu-item" onclick="openPage('contact', this)">
+
+                <span class="number">04</span>
+
+                <span>
+                    ช่องทางการติดต่อ
+                </span>
+
             </button>
+
         </nav>
 
-        <div class="sidebar-bottom">
-            BENYAPA
+
+        <div class="sidebar-footer">
+
+            <span>BENYAPA</span>
+
+            <small>PORTFOLIO 2026</small>
+
         </div>
 
     </aside>
 
 
-    <!-- ================= MAIN ================= -->
-    <main class="main-content">
+
+    <!-- ======================================
+         MAIN CONTENT
+    ======================================= -->
+
+    <main class="main">
 
 
-        <!-- ================= HOME ================= -->
-        <section id="home" class="page active-page">
+        <!-- ======================================
+             HOME
+        ======================================= -->
 
-            <div class="hero">
+        <section id="home" class="page active">
 
-                <div class="hero-title">
-                    <p class="small-title">MY PERSONAL</p>
-                    <h1>PORTFOLIO</h1>
+            <div class="home-container">
+
+
+                <div class="home-top">
+
+                    <span class="mini-title">
+                        PERSONAL PORTFOLIO
+                    </span>
+
+                    <div class="decor-line"></div>
+
                 </div>
+
+
+                <h1 class="portfolio-title">
+                    PORT<br>
+                    <span>FOLIO</span>
+                </h1>
+
 
                 <!-- รูปภาพหลัก -->
-                <div class="profile-image">
+
+                <div class="main-photo">
+
                     <img src="images/profile.jpg"
-                         alt="รูปภาพของเบญญาภา">
+                        alt="Benyapa">
+
+                    <div class="photo-number">
+                        01
+                    </div>
+
                 </div>
 
-                <div class="intro">
 
-                    <h2>น.ส.เบญญาภา เกลาเกลี้ยง</h2>
+                <div class="home-info">
 
-                    <h3>
+                    <h2>
+                        น.ส.เบญญาภา เกลาเกลี้ยง
+                    </h2>
+
+                    <p class="school">
                         โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
-                    </h3>
+                    </p>
 
-                    <p>
-                        คณะพยาบาลศาสตร์ สาขาพยาบาลศาสตร์<br>
+                    <p class="university">
+                        คณะพยาบาลศาสตร์ สาขาพยาบาลศาสตร์
+                        <br>
                         จุฬาลงกรณ์มหาวิทยาลัย
                     </p>
 
                 </div>
 
+
+                <div class="scroll-text">
+                    SCROLL TO EXPLORE
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- ================= PREFACE ================= -->
+
+        <!-- ======================================
+             PREFACE
+        ======================================= -->
+
         <section id="preface" class="page">
 
-            <div class="page-header">
+
+            <div class="page-title">
+
                 <span>01</span>
+
                 <h1>คำนำ</h1>
+
+                <p>
+                    PREFACE
+                </p>
+
             </div>
 
-            <div class="content-box preface-box">
 
-                <p>
-                    &nbsp;&nbsp;แฟ้มสะสมผลงาน (Portfolio) เล่มนี้
-                    จัดทำขึ้นเพื่อเป็นตัวแทนในการนำเสนอข้อมูลเกี่ยวกับ
-                    ประวัติส่วนตัว ความรู้ ความสามารถ ทักษะ และกิจกรรมต่างๆ
-                    ของข้าพเจ้า โดยเฉพาะความสนใจและความมุ่งมั่นที่มีต่อการศึกษาต่อ
-                </p>
+            <div class="preface-layout">
 
-                <p>
-                    &nbsp;&nbsp;ภายในแฟ้มสะสมผลงานเล่มนี้ ประกอบด้วย
-                    ประวัติส่วนตัว ผลการเรียน กิจกรรมที่ข้าพเจ้าได้เข้าร่วม
-                </p>
+                <div class="vertical-text">
+                    PORTFOLIO
+                </div>
+
+
+                <div class="text-card">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+
+                    <p>
+                        &nbsp;&nbsp;แฟ้มสะสมผลงาน (Portfolio) เล่มนี้
+                        จัดทำขึ้นเพื่อเป็นตัวแทนในการนำเสนอข้อมูลเกี่ยวกับ
+                        ประวัติส่วนตัว ความรู้ ความสามารถ ทักษะ และกิจกรรมต่างๆ
+                        ของข้าพเจ้า โดยเฉพาะความสนใจและความมุ่งมั่นที่มีต่อการศึกษาต่อ
+                    </p>
+
+
+                    <p>
+                        &nbsp;&nbsp;ภายในแฟ้มสะสมผลงานเล่มนี้ ประกอบด้วย
+                        ประวัติส่วนตัว ผลการเรียน กิจกรรมที่ข้าพเจ้าได้เข้าร่วม
+                    </p>
+
+
+                    <div class="signature">
+                        BENYAPA
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= PROFILE ================= -->
+
+        <!-- ======================================
+             PROFILE
+        ======================================= -->
+
         <section id="profile" class="page">
 
-            <div class="page-header">
+
+            <div class="page-title">
+
                 <span>02</span>
+
                 <h1>ประวัติส่วนตัว</h1>
+
+                <p>
+                    ABOUT ME
+                </p>
+
             </div>
 
-            <div class="profile-grid">
 
-                <!-- BOX 1 -->
-                <div class="content-box">
+            <div class="profile-layout">
 
-                    <h2>ประวัติส่วนตัว</h2>
 
-                    <div class="info-list">
+                <!-- PERSONAL -->
 
-                        <p>
-                            <strong>ชื่อ</strong>
+                <div class="info-card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h2>
+                        ประวัติส่วนตัว
+                    </h2>
+
+
+                    <div class="info-row">
+
+                        <span>ชื่อ</span>
+
+                        <strong>
                             น.ส.เบญญาภา เกลาเกลี้ยง
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>ชื่อเล่น</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>ชื่อเล่น</span>
+
+                        <strong>
                             โบนัส
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>อายุ</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>อายุ</span>
+
+                        <strong>
                             17 ปี
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>วันเกิด</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>วันเกิด</span>
+
+                        <strong>
                             26 ธันวาคม 2551
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>สัญชาติ</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>สัญชาติ</span>
+
+                        <strong>
                             ไทย
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>เชื้อชาติ</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>เชื้อชาติ</span>
+
+                        <strong>
                             ไทย
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>ศาสนา</strong>
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>ศาสนา</span>
+
+                        <strong>
                             พุทธ
-                        </p>
+                        </strong>
 
                     </div>
 
                 </div>
 
 
-                <!-- BOX 2 -->
-                <div class="content-box">
 
-                    <h2>ประวัติการศึกษา</h2>
+                <!-- EDUCATION -->
 
-                    <div class="info-list">
+                <div class="info-card education">
 
-                        <p>
-                            <strong>สถานศึกษา</strong>
-                            โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
-                        </p>
+                    <div class="card-number">
+                        02
+                    </div>
 
-                        <p>
-                            <strong>แผนการเรียน</strong>
+                    <h2>
+                        ประวัติการศึกษา
+                    </h2>
+
+
+                    <div class="education-main">
+
+                        <span>
+                            SCHOOL
+                        </span>
+
+                        <h3>
+                            โรงเรียนบ้านบึง
+                            <br>
+                            "อุตสาหกรรมนุเคราะห์"
+                        </h3>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>แผนการเรียน</span>
+
+                        <strong>
                             วิทยาศาสตร์-คณิตศาสตร์ (MSEP)
-                        </p>
+                        </strong>
 
-                        <p>
-                            <strong>GPAX</strong>
+                    </div>
+
+
+                    <div class="gpax">
+
+                        <span>
+                            GPAX
+                        </span>
+
+                        <strong>
                             3.83
-                        </p>
+                        </strong>
 
                     </div>
 
                 </div>
+
 
             </div>
 
         </section>
 
 
-        <!-- ================= ACTIVITIES ================= -->
+
+        <!-- ======================================
+             ACTIVITIES
+        ======================================= -->
+
         <section id="activities" class="page">
 
-            <div class="page-header">
+
+            <div class="page-title">
+
                 <span>03</span>
+
                 <h1>ผลงานและกิจกรรม</h1>
+
+                <p>
+                    ACTIVITIES & ACHIEVEMENTS
+                </p>
+
             </div>
 
 
-            <!-- ACTIVITY 1 -->
-            <article class="activity-card">
 
-                <img src="images/activity1.jpg"
-                     alt="เกียรติบัตรการเรียนล่วงหน้าเปิดโลกเคมี">
+            <!-- ACTIVITY 01 -->
 
-                <div class="activity-text">
+            <article class="activity">
+
+                <div class="activity-image">
+
+                    <img src="images/activity1.jpg"
+                        alt="Chula X MOOC">
+
+                    <span>
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        CERTIFICATE
+                    </span>
 
                     <h2>
-                        ได้รับเกียรติบัตรจากการเรียนล่วงหน้า
-                        เปิดโลกเคมี: สารประกอบอินทรีย์และพอลิเมอร์
+                        เปิดโลกเคมี:
+                        สารประกอบอินทรีย์และพอลิเมอร์
                         Chula X MOOC
                     </h2>
 
-                    <p class="date">
+                    <div class="activity-date">
                         30 มีนาคม 2569
-                    </p>
+                    </div>
 
                     <p>
-                        <strong>สิ่งที่ได้รับจากการเข้าร่วมกิจกรรมนี้ คือ</strong>
-                        ได้รับความรู้เรื่องสารประกอบอินทรีย์และพอลิเมอร์
+                        ได้รับเกียรติบัตรจากการเรียนล่วงหน้า
+                        เปิดโลกเคมี: สารประกอบอินทรีย์และพอลิเมอร์
+                        Chula X MOOC
                     </p>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้รับความรู้เรื่องสารประกอบอินทรีย์
+                            และพอลิเมอร์
+                        </span>
+
+                    </div>
 
                 </div>
 
             </article>
 
 
-            <!-- ACTIVITY 2 -->
-            <article class="activity-card">
 
-                <img src="images/activity2.jpg"
-                     alt="กิจกรรมอบรมแกนนำจิตอาสาป้องกันเอดส์">
+            <!-- ACTIVITY 02 -->
 
-                <div class="activity-text">
+            <article class="activity reverse">
+
+                <div class="activity-image">
+
+                    <img src="images/activity2.jpg"
+                        alt="กิจกรรมจิตอาสาป้องกันเอดส์">
+
+                    <span>
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        VOLUNTEER
+                    </span>
 
                     <h2>
+                        กิจกรรมอบรมแกนนำจิตอาสา
+                        ป้องกันเอดส์
+                    </h2>
+
+                    <p>
                         ได้รับเกียรติบัตรจากการเป็นคณะกรรมการ
                         จัดกิจกรรมอบรมแกนนำจิตอาสาป้องกันเอดส์
                         เทิดพระเกียรติพระเจ้าวรวงศ์เธอ
                         พระองค์เจ้าโสมสวลี กรมหมื่นสุทธนารีนาถ
-                    </h2>
+                    </p>
 
                     <p>
                         ณ โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"
                     </p>
 
-                    <p class="date">
+                    <div class="activity-date">
                         13 - 15 กรกฎาคม 2569
-                    </p>
+                    </div>
 
-                    <p>
-                        <strong>สิ่งที่ได้รับจากการเข้าร่วมกิจกรรมนี้ คือ</strong>
-                        ได้ทำจิตอาสาและรับความรู้เรื่องเอดส์ทั้งในการป้องกัน
-                        และวิธีรักษาตนเองให้ห่างไกลจากโรคเอดส์
-                    </p>
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้ทำจิตอาสาและรับความรู้เรื่องเอดส์
+                            ทั้งในการป้องกันและวิธีรักษาตนเอง
+                            ให้ห่างไกลจากโรคเอดส์
+                        </span>
+
+                    </div>
 
                 </div>
 
             </article>
 
 
-            <!-- ACTIVITY 3 + 4 -->
-            <div class="image-pair">
 
-                <img src="images/activity3.jpg"
-                     alt="ผลงานกิจกรรมที่ 3">
+            <!-- ACTIVITY 03 -->
 
-                <img src="images/activity4.jpg"
-                     alt="ผลงานกิจกรรมที่ 4">
+            <article class="gallery-activity">
 
-            </div>
+                <div class="gallery-images">
+
+                    <div>
+                        <img src="images/activity3.jpg"
+                            alt="กิจกรรมป่าชายเลน">
+                    </div>
+
+                    <div>
+                        <img src="images/activity4.jpg"
+                            alt="กิจกรรมป่าชายเลน">
+                    </div>
+
+                </div>
 
 
-            <!-- ACTIVITY 3/4 TEXT -->
-            <article class="activity-card">
+                <div class="gallery-text">
 
-                <div class="activity-text full">
+                    <span class="activity-label">
+                        VOLUNTEER PROJECT
+                    </span>
 
                     <h2>
-                        ได้รับเกียรติบัตรจากการเข้าร่วมโครงการ
-                        "หัวใจจิตอาสาฟื้นฟูป่าชายเลน"
+                        โครงการ "หัวใจจิตอาสาฟื้นฟูป่าชายเลน"
+                    </h2>
+
+                    <p>
                         มูลนิธิวิถีธรรมชลบุรีร่วมกับกลุ่มจิตอาสา
                         DRAGON EYE GROUP
-                    </h2>
-
-                    <p>
-                        ณ สวนป่าชายเลย สอ.รฝ. กองทัพเรือ สัตหีบ
                     </p>
 
-                    <p class="date">
+                    <p>
+                        ณ สวนป่าชายเลน สอ.รฝ.
+                        กองทัพเรือ สัตหีบ
+                    </p>
+
+                    <div class="activity-date">
                         8 พฤษภาคม 2569
-                    </p>
+                    </div>
 
-                    <p>
-                        <strong>สิ่งที่ได้รับจากการเข้าร่วมกิจกรรมนี้ คือ</strong>
-                        ได้รับความรู้และได้ร่วมทำจิตอาสาในการปลูกป่าชายเลน
-                        เพื่อป้องกันการกัดเซาะชายฝั่งและเป็นแหล่งที่อยู่อาศัย
-                        ของสัตว์น้ำขนาดเล็ก
-                    </p>
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้รับความรู้และได้ร่วมทำจิตอาสา
+                            ในการปลูกป่าชายเลนเพื่อป้องกัน
+                            การกัดเซาะชายฝั่งและเป็นแหล่ง
+                            ที่อยู่อาศัยของสัตว์น้ำขนาดเล็ก
+                        </span>
+
+                    </div>
 
                 </div>
 
             </article>
 
 
-            <!-- ACTIVITY 5 + 6 -->
-            <div class="image-pair">
 
-                <img src="images/activity5.jpg"
-                     alt="ผลงานกิจกรรมที่ 5">
+            <!-- ACTIVITY 04 -->
 
-                <img src="images/activity6.jpg"
-                     alt="ผลงานกิจกรรมที่ 6">
+            <article class="gallery-activity">
 
-            </div>
+                <div class="gallery-images">
+
+                    <div>
+                        <img src="images/activity5.jpg"
+                            alt="IS THIS GOOD">
+                    </div>
+
+                    <div>
+                        <img src="images/activity6.jpg"
+                            alt="IS THIS GOOD">
+                    </div>
+
+                </div>
 
 
-            <!-- ACTIVITY 5/6 TEXT -->
-            <article class="activity-card">
+                <div class="gallery-text">
 
-                <div class="activity-text full">
+                    <span class="activity-label">
+                        MORAL ACTIVITY
+                    </span>
 
                     <h2>
-                        ได้รับเกียรติบัตรจากการเข้าร่วมกิจกรรม
-                        IS THIS GOOD V.3 # ASK YOUR HEART
-                        มูลนิธิวิถีธรรมชลบุรี
-                        อาณาจักรธรรมกรุงเทพฯ เขตบ่อยชลบุรี
+                        IS THIS GOOD V.3
+                        <br>
+                        # ASK YOUR HEART
                     </h2>
 
-                    <p class="date">
-                        20 - 21 มิถุนายน 2569
+                    <p>
+                        มูลนิธิวิถีธรรมชลบุรี
+                        อาณาจักรธรรมกรุงเทพฯ เขตบ่อยชลบุรี
                     </p>
 
-                    <p>
-                        <strong>สิ่งที่ได้รับจากการเข้าร่วมกิจกรรมนี้ คือ</strong>
-                        ได้ดูแลและจัดกิจกรรมเสริมสร้างคุณธรรมจริยธรรม
-                        ให้แก่เด็กเพื่อขัดเกลาจิตใจ ปลูกฝังคุณธรรมจริยธรรม
-                        ให้เติบโตเป็นผู้ใหญ่ที่ดีของสังคม
-                    </p>
+                    <div class="activity-date">
+                        20 - 21 มิถุนายน 2569
+                    </div>
+
+                    <div class="learning">
+
+                        <strong>
+                            สิ่งที่ได้รับ
+                        </strong>
+
+                        <span>
+                            ได้ดูแลและจัดกิจกรรมเสริมสร้าง
+                            คุณธรรมจริยธรรมให้แก่เด็ก
+                            เพื่อขัดเกลาจิตใจ ปลูกฝังคุณธรรมจริยธรรม
+                            ให้เติบโตเป็นผู้ใหญ่ที่ดีของสังคม
+                        </span>
+
+                    </div>
 
                 </div>
 
@@ -364,54 +677,125 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
+
+        <!-- ======================================
+             CONTACT
+        ======================================= -->
+
         <section id="contact" class="page">
 
-            <div class="page-header">
+
+            <div class="page-title">
+
                 <span>04</span>
+
                 <h1>ช่องทางการติดต่อ</h1>
+
+                <p>
+                    CONTACT
+                </p>
+
             </div>
 
-            <div class="contact-container">
 
-                <div class="contact-card">
-
-                    <div class="contact-icon">✉</div>
-
-                    <h2>Gmail</h2>
-
-                    <p>
-                        kelakeliyngb@gmail.com
-                    </p>
-
-                </div>
+            <div class="contact-layout">
 
 
-                <div class="contact-card">
+                <div class="contact-intro">
 
-                    <div class="contact-icon">☎</div>
+                    <span>
+                        LET'S CONNECT
+                    </span>
 
-                    <h2>Tel</h2>
+                    <h2>
+                        Thank you for<br>
+                        visiting my<br>
+                        portfolio.
+                    </h2>
 
-                    <p>
-                        0805057578
-                    </p>
+                    <div class="contact-line"></div>
 
                 </div>
 
 
-                <div class="contact-card">
 
-                    <div class="contact-icon">◎</div>
+                <div class="contact-list">
 
-                    <h2>ID</h2>
 
-                    <p>
-                        bonus_benyapa
-                    </p>
+                    <a class="contact-card"
+                        href="mailto:kelakeliyngb@gmail.com">
+
+                        <span class="contact-icon">
+                            ✉
+                        </span>
+
+                        <div>
+
+                            <small>
+                                GMAIL
+                            </small>
+
+                            <strong>
+                                kelakeliyngb@gmail.com
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a class="contact-card"
+                        href="tel:0805057578">
+
+                        <span class="contact-icon">
+                            ☎
+                        </span>
+
+                        <div>
+
+                            <small>
+                                TELEPHONE
+                            </small>
+
+                            <strong>
+                                0805057578
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <div class="contact-card">
+
+                        <span class="contact-icon">
+                            ◎
+                        </span>
+
+                        <div>
+
+                            <small>
+                                LINE ID
+                            </small>
+
+                            <strong>
+                                bonus_benyapa
+                            </strong>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
+            </div>
+
+
+            <div class="contact-footer">
+                BENYAPA KELAKLIENG · PORTFOLIO 2026
             </div>
 
         </section>
@@ -420,7 +804,9 @@
     </main>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
