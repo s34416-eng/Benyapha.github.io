@@ -2046,3 +2046,27 @@ img {
         right: -150px;
     }
 }
+/* =====================================
+   MENU LINK FIX
+===================================== */
+
+.menu-item {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.menu-item span {
+    pointer-events: none;
+}
+
+.menu {
+    position: relative;
+    z-index: 100;
+}
+
+.sidebar {
+    position: relative;
+    z-index: 100;
+}
